@@ -1,0 +1,3 @@
+@interface HBRootViewController : UIViewController
+
+@end
