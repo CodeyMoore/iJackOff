@@ -1,11 +1,15 @@
+ARCHS = armv7 arm64
 GO_EASY_ON_ME = 1
-THEOS_PACKAGE_DIR_NAME = debs
+DEBUG = 0
+FINALPACKAGE = 1
+
 include $(THEOS)/makefiles/common.mk
 
-APPLICATION_NAME = HubBub
-HubBub_FILES = main.m HBAppDelegate.m HBRootViewController.m
-HubBub_FRAMEWORKS = UIKit CoreGraphics
+APPLICATION_NAME = iJackOff
+iJackOff_FILES = main.m XXXAppDelegate.m XXXRootViewController.m
+iJackOff_FRAMEWORKS = UIKit CoreGraphics
 
 include $(THEOS_MAKE_PATH)/application.mk
+
 after-install::
-	install.exec "uicache"
+	install.exec "killall \"iJackOff\"" || true

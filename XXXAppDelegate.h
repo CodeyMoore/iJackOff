@@ -1,4 +1,4 @@
-@interface HBAppDelegate : UIResponder <UIApplicationDelegate>
+@interface XXXAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) UIViewController *rootViewController;

@@ -1,7 +1,7 @@
-#import "HBAppDelegate.h"
+#import "XXXAppDelegate.h"
 
 int main(int argc, char *argv[]) {
 	@autoreleasepool {
-		return UIApplicationMain(argc, argv, nil, NSStringFromClass(HBAppDelegate.class));
+		return UIApplicationMain(argc, argv, nil, NSStringFromClass(XXXAppDelegate.class));
 	}
 }
